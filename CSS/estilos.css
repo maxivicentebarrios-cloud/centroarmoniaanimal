@@ -188,7 +188,7 @@ main {
 
 @media (max-width: 480px) {
     .galeria-grid {
-        grid-template-columns: 1fr; /* 1 columna en móviles */
+        grid-template-columns: 1fr; 
     }
 
     .galeria-grid img {
@@ -415,9 +415,9 @@ font-size: 0.9rem;
     color:#5a3310;
 }
 
-/* Alerta adopción – color armonioso */
+/* Alerta adopción  */
 .alert-adopcion {
-    background-color: #f3f7f5;   /* verde muy suave */
+    background-color: #f3f7f5;   
     color: #5a3310;
     border: 1px solid #d2e4df;
 }
