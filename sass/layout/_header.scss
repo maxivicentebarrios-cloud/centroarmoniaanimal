@@ -1,0 +1,53 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+header {
+  background-color: v.$color-blanco;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: v.$espaciado-base;
+  gap: v.$espaciado-base * 1.5;
+  flex-wrap: wrap;
+  text-align: center;
+  @include m.sombra; 
+
+  img {
+    width: 220px;
+    height: 140px;
+    border-radius: 50%/40%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    color: v.$color-primario;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+  }
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+// Ajustes responsivos
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    padding: v.$espaciado-base / 2;
+  }
+
+  header img {
+    margin-bottom: 15px; 
+  }
+
+  header h1 {
+    font-size: 2rem; 
+  }
+}

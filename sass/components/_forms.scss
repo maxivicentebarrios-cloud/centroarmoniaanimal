@@ -1,0 +1,11 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.form-control {
+  @include m.radio(sm);
+}
+
+.form-label {
+  font-weight: 600;
+  color: v.$color-primario;
+}

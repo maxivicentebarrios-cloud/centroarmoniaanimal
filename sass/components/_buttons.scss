@@ -1,0 +1,16 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.btn-primary {
+  background-color: v.$color-primario;
+  color: v.$color-blanco;
+  @include m.radio(lg);
+  padding: v.$espaciado-base / 2 v.$espaciado-base;
+  border: none;
+  cursor: pointer;
+  @include m.transicion(background-color);
+
+  &:hover {
+    background-color: v.$color-secundario;
+  }
+}

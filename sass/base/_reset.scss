@@ -1,0 +1,31 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: v.$fuente-principal;
+  background-color: v.$color-fondo;
+  color: v.$color-texto;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: v.$color-secundario;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+p {
+  font-size: v.$fuente-base;
+  text-align: justify;
+  margin-bottom: v.$espaciado-base;
+  color: v.$color-texto;
+}
+

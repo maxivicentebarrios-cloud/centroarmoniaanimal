@@ -1,0 +1,44 @@
+@use "variables" as v;
+
+// Bordes redondeados
+@mixin radio($tam: lg) {
+  @if $tam == sm { border-radius: v.$radius-sm; }
+  @else if $tam == md { border-radius: v.$radius-md; }
+  @else { border-radius: v.$radius-lg; }
+}
+
+// Sombras
+@mixin sombra($tipo: suave) {
+  @if $tipo == suave { box-shadow: v.$shadow-suave; }
+  @else { box-shadow: v.$shadow-medio; }
+}
+
+// Flex centering
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Transiciones
+@mixin transicion($prop: all) {
+  transition: $prop 0.3s ease;
+}
+
+// Botón base
+@mixin boton-base {
+  border: none;
+  cursor: pointer;
+  @include radio(lg);
+  @include transicion(background-color);
+}
+
+// Animación salto
+@mixin animacion-salto($distancia: -6px) {
+  animation: saltito-gif 1.2s infinite ease-in-out;
+
+  @keyframes saltito-gif {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY($distancia); }
+  }
+}

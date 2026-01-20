@@ -1,0 +1,31 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: v.$espaciado-base * 1.5;
+  margin-top: v.$espaciado-base * 0.75;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: v.$color-secundario;
+  font-weight: bold;
+  font-size: v.$fuente-base;
+  transition: color 0.3s;
+
+  &:hover, &:focus {
+    color: v.$color-hover;
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: v.$espaciado-base;
+  }
+}

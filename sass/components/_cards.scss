@@ -1,0 +1,24 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.card {
+  @include m.radio(lg);
+  border: none;
+
+  img {
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: v.$radius-lg;
+    border-top-right-radius: v.$radius-lg;
+  }
+}
+
+.card-title {
+  color: v.$color-primario;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: v.$fuente-small;
+  color: v.$color-primario;
+}
