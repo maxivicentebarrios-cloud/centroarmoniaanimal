@@ -27,111 +27,52 @@ p {
 }
 
 header {
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  gap: 30px;
-  flex-wrap: wrap;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #947152;
+  color: #fff;
+  padding: 10px 20px;
 }
-header img {
-  width: 220px;
-  height: 140px;
-  border-radius: 50%/40%;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-header h1 {
-  font-size: 3.5rem;
-  color: #5a3310;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.header-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-}
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-  }
-  header img {
-    margin-bottom: 15px;
-  }
-  header h1 {
-    font-size: 2rem;
-  }
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 15px;
-  padding: 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: #7b5731;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: color 0.3s;
-}
-nav a:hover, nav a:focus {
-  color: #b17a42;
-}
-
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-main {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-#promociones,
-#formas-pago {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fffaf0;
+header .header-logo img {
+  max-height: 80px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+header .navbar-nav .nav-link {
+  font-weight: bold;
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+header .navbar-nav .nav-link:hover, header .navbar-nav .nav-link:focus {
+  color: #b17a42 !important;
+}
+
+body {
+  background-color: #f7faf9;
+  color: #333;
+}
+
+main {
+  background-color: #f7faf9;
 }
 
 footer {
+  background-color: #947152;
+  color: #fff;
   text-align: center;
   padding: 20px;
-  background-color: #fff;
-  color: #7b5731;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn-primary {
-  background-color: #5a3310;
+  background-color: #947152;
+  border-color: #947152;
   color: #fff;
-  border-radius: 15px;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 .btn-primary:hover {
-  background-color: #7b5731;
+  background-color: #b17a42;
+  border-color: #b17a42;
+}
+
+.btn {
+  border-radius: 12px;
 }
 
 .card {
@@ -146,13 +87,13 @@ footer {
 }
 
 .card-title {
-  color: #5a3310;
+  color: #947152;
   font-weight: bold;
 }
 
 .card-text {
   font-size: 0.95rem;
-  color: #5a3310;
+  color: #947152;
 }
 
 .galeria,
@@ -231,7 +172,7 @@ footer {
 
 .form-label {
   font-weight: 600;
-  color: #5a3310;
+  color: #947152;
 }
 
 /*# sourceMappingURL=estilo.css.map */

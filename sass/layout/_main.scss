@@ -1,18 +1,10 @@
 @use "../utilities/variables" as v;
-@use "../utilities/mixins" as m;
 
-main {
-  max-width: 1000px;
-  margin: v.$espaciado-base * 2 auto;
-  padding: v.$espaciado-base;
+body {
+  background-color: v.$color-fondo;
+  color: v.$color-texto;
 }
 
-#promociones,
-#formas-pago {
-  max-width: 900px;
-  margin: v.$espaciado-base * 2 auto;
-  padding: v.$espaciado-base;
-  background-color: v.$color-seccion;
-  border-radius: v.$radius-md;
-  @include m.sombra(suave);
+main {
+  background-color: v.$color-fondo;
 }

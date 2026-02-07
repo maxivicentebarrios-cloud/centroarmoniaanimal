@@ -2,9 +2,9 @@
 @use "../utilities/mixins" as m;
 
 footer {
+  background-color: v.$color-primario;
+  color: v.$color-blanco;
   text-align: center;
   padding: v.$espaciado-base;
-  background-color: v.$color-blanco;
-  color: v.$color-secundario;
-  @include m.sombra(suave);
+  font-family: v.$fuente-principal;
 }

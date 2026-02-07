@@ -1,13 +1,8 @@
 @use "../utilities/variables" as v;
-@use "../utilities/mixins" as m;
 
 .alert-adopcion {
-  background-color: v.$color-fondo;
+  background-color: v.$color-seccion;
   color: v.$color-texto;
   border: 1px solid v.$color-borde;
-
-  .alert-link {
-    color: v.$color-link;
-    font-weight: 600;
-  }
+  box-shadow: v.$shadow-suave;
 }

@@ -1,31 +1,35 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixins" as m;
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: v.$espaciado-base * 1.5;
-  margin-top: v.$espaciado-base * 0.75;
-  padding: 0;
-}
+nav {
+  margin-top: math.div(v.$espaciado-base, 2);
 
-nav a {
-  text-decoration: none;
-  color: v.$color-secundario;
-  font-weight: bold;
-  font-size: v.$fuente-base;
-  transition: color 0.3s;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: math.div(v.$espaciado-base, 2);
+    padding: 0;
+    margin: 0;
 
-  &:hover, &:focus {
-    color: v.$color-hover;
+    li a {
+      color: v.$color-blanco;
+      text-decoration: none;
+      font-weight: bold;
+      padding: math.div(v.$espaciado-base, 4) math.div(v.$espaciado-base, 2);
+      @include m.transicion(color);
+
+      &.active, &:hover {
+        color: v.$color-hover;
+      }
+    }
   }
 }
 
-// Responsive
+// Responsive con media query
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
-    gap: v.$espaciado-base;
+    gap: math.div(v.$espaciado-base, 2);
   }
 }

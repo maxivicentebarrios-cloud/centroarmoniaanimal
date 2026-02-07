@@ -2,10 +2,10 @@
 @use "utilities/mixins" as m;
 
 @use "base/reset";
-@use "layout/header";
-@use "layout/nav";
+@use "layout/header";  
 @use "layout/main";
 @use "layout/footer";
+
 @use "components/buttons";
 @use "components/cards";
 @use "components/gallery";
